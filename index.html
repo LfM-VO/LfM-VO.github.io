@@ -127,11 +127,11 @@ Non-Continuous Conditions</h1>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
-      <img src="static/images/lfm_main.png" alt="MY ALT TEXT" style="width: 300px; height: auto;" />
+      <img src="static/images/lfm_main_horizon.png" alt="MY ALT TEXT" style="width: 1280px; height: auto;" />
       <h2 class="subtitle has-text-centered">
       </h2>
       <h2 class="subtitle has-text-centered">
-        Ranking of the features based on their similarities  
+        In visual odometry, a motion exists between every two consecutive frames. We utilize an encoder to generate an observation feature for each pair of consecutive images. Under non-continuous conditions, certain motions may be missing from the sequence. To handle this, we apply a supervised Rank-N-Contrastive loss, which ranks the features based on the motion between consecutive frames. By leveraging this ranked latent space, our model can estimate the most likely motion when data discontinuities occur.
       </h2>
     </div>
   </div>
@@ -146,7 +146,7 @@ Non-Continuous Conditions</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           Visual odometry (VO) plays a crucial role in various applications, from autonomous vehicles to robotics, but remains challenging under non-continuous conditions where data may be fragmented or interrupted, such as in environments with poor sensor coverage, intermittent signal loss, or rapid scene changes. In this paper, we present a novel approach to learning-based visual odometry, Learning from Motion (LfM): A Contrastive Approach to Visual Odometry in Non-Continuous Conditions, which leverages contrastive learning to enhance model performance in such scenarios. Our method, LfM, effectively ranks latent representations according to the robot's motion in 3D space, improving trajectory estimation even when the data sequence is non-continuous. We validate our approach through experiments on the KITTI dataset, demonstrating the effectiveness of LfM in challenging environments. These results highlight the potential of LfM to improve the reliability of VO systems in real-world applications, particularly in non-continuous data conditions.
+            Visual odometry (VO) is critical for a wide range of applications, including autonomous vehicles and robotics, but it faces significant challenges in non-continuous conditions where data may be fragmented or disrupted. These disruptions often occur in environments with poor sensor coverage or intermittent signal loss. To address these challenges, we introduce Learning from Motion (LfM): A Contrastive Approach to Visual Odometry in Non-Continuous Conditions, a novel method that leverages contrastive learning to organize latent representations based on the robot's motion in 3D space. Our method not only improves motion estimation but also enhances spatial understanding of the VO system, even when data sequences are non-continuous. We validate LfM's effectiveness through experiments on the KITTI dataset, demonstrating its capability to handle fragmented data. The results highlight LfM's potential to improve the reliability of VO systems in real-world applications and offer new insights into spatial intelligence.
         </div>
       </div>
     </div>
@@ -162,28 +162,28 @@ Non-Continuous Conditions</h1>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Your image here -->
-          <img class="constant-height-image" src="static/images/lfm_overview.png" alt="MY ALT TEXT"/>
+          <img class="constant-height-image" src="static/images/lfm_overview.png" alt="MY ALT TEXT" style="width: 480px; height: auto;"/>
           <h2 class="subtitle has-text-centered">
             First image description.
           </h2>
         </div>
         <div class="item">
           <!-- Your image here -->
-          <img class="constant-height-image" src="static/images/lfm_latent.png" alt="MY ALT TEXT"/>
+          <img class="constant-height-image" src="static/images/new_encoding.png" alt="MY ALT TEXT" style="width: 480px; height: auto;"/>
           <h2 class="subtitle has-text-centered">
             Second image description.
           </h2>
         </div>
         <div class="item">
           <!-- Your image here -->
-          <img class="constant-height-image" src="static/images/lfm_trajectory.png" alt="MY ALT TEXT"/>
+          <img class="constant-height-image" src="static/images/lfm_latent.png" alt="MY ALT TEXT" style="width: 480px; height: auto;"/>
           <h2 class="subtitle has-text-centered">
             Third image description.
           </h2>
         </div>
         <div class="item">
           <!-- Your image here -->
-          <img class="constant-height-image" src="static/images/lfm_encoding_comparison.png" alt="MY ALT TEXT"/>
+          <img class="constant-height-image" src="static/images/lfm_trajectory.png" alt="MY ALT TEXT" style="width: 480px; height: auto;"/>
           <h2 class="subtitle has-text-centered">
             Fourth image description.
           </h2>
@@ -209,7 +209,7 @@ Non-Continuous Conditions</h1>
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/p0dzwtevMOs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
